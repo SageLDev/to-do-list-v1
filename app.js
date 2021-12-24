@@ -56,6 +56,6 @@ app.post("/reload", function(req, res){
   }
 });
 
-app.listen(port, function() {
+app.listen(port || process.env.PORT, function() {
   console.log("Server running on port: " + port);
 });
